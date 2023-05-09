@@ -9,7 +9,7 @@
     <!--网页图标-->
     <link rel="icon" href="img/taobao.ico">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/Swiper/9.3.0/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -73,9 +73,9 @@
                     <li><a href="javascript:void(0);">店铺</a><a href="javascript:void(0);">天猫</a></li>
                     <li></li>
                 </ul>
-                <div class="search-m-input">
+                <div class="search-m-input" id="search-m-input">
                     <label><input class="box1" type="text" name="search" placeholder="search..." v-model="name"></label>
-                    <button class="btn" type="submit" id="search" onclick="window.location.href='jump.html'">
+                    <button class="btn" id="search" onclick="window.location.href='jump.html'">
                         搜索{{name}}
                     </button>
                 </div>
@@ -541,11 +541,12 @@
     </div>
 </div>
 
-<script src="js/load_left.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/jquery-3.6.0.js"></script>
-<script src="js/vue.js"></script>
 
+<script src="https://cdn.staticfile.org/Swiper/9.3.0/swiper-bundle.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.js"></script>
+<script src="https://cdn.staticfile.org/vue/3.2.47/vue.global.min.js"></script>
+
+<script src="js/load_left.js"></script>
 <script src="js/slipDown.js"></script>
 <script src="js/toBig.js"></script>
 <script src="js/toCenter.js"></script>
@@ -571,12 +572,13 @@
             prevEl: '.swiper-button-prev',
         },
     })
-    new Vue({
-        el: '.search-m-input',
-        data: {
+    const app = Vue.createApp({
+        data: () => ({
             name: ''
-        }
-    })
+        })
+    });
+
+    app.mount('#search-m-input');
 </script>
 </body>
 </html>
