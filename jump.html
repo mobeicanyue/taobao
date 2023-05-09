@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: whitesmoke;
+        }
+        div{
+            margin:80px  auto;
+            width: 450px;
+            height: 250px;
+            background: darkgray;
+            border:1px solid #755050;
+        }
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>提交成功</h2>
+    <a href="login.html">
+        <span id="seconds">3</span>
+        秒后系统会自动跳转，也可以单击此链接跳转
+    </a>
+</div>
+<script>
+    function timing(secs, url) {
+        let seconds = document.getElementById('seconds');
+        seconds.innerHTML = (--secs).toString();
+        if (secs > 0) {
+            setTimeout('timing(' + secs + ',\'' + url + '\')', 1000)
+        } else {
+            location.href = url;
+        }
+    }
+    timing(5,'login.html');
+</script>
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘宝网-淘！我喜欢</title>
+
+    <!--网页图标-->
+    <link rel="icon" href="img/taobao.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+<div class="web-shop">
+
+    <div class="header">
+        <div class="container">
+            <ul class="nav">
+                <li><a href="javascript:void(0);">中国大陆</a></li>
+                <li class="orange"><a href="javascript:void(0);">亲，请登录</a></li>
+                <li><a href="javascript:void(0);">免费注册</a></li>
+                <li><a href="javascript:void(0);">手机逛淘宝</a></li>
+            </ul>
+            <ul class="nav">
+                <li>
+                    <a href="login.html" class="arrow has-s-l" id="me">我的淘宝
+                        <div class="s-l" id="me1">
+                            <p>已买到的宝贝</p>
+                            <p>我的足迹</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="arrow has-s-l">购物车
+                        <div class="s-l">
+                            <p>无</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="arrow has-s-l" id="folder">收藏夹
+                        <div class="s-l" id="folder1">
+                            <p>无</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="arrow">商品分类</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="arrow">卖家中心</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="arrow">联系客服</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="arrow">网站导航</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="J_search">
+        <div class="search">
+            <a class="search-l" href="https://www.taobao.com/" target="_blank">
+                <img src="img/logo.png" alt="" width="143" height="59">
+            </a>
+            <div class="search-m">
+                <ul class="search-m-tab">
+                    <li><a href="javascript:void(0);" class="choose1">淘宝</a></li>
+                    <li><a href="javascript:void(0);">店铺</a><a href="javascript:void(0);">天猫</a></li>
+                    <li></li>
+                </ul>
+                <div class="search-m-input">
+                    <label><input class="box1" type="text" name="search" placeholder="search..." v-model="name"></label>
+                    <button class="btn" type="submit" id="search" onclick="window.location.href='jump.html'">
+                        搜索{{name}}
+                    </button>
+                </div>
+
+                <div class="search-m-choose">
+                    <a href="javascript:void(0);">新款连衣裙</a>
+                    <a href="javascript:void(0);">四件套</a>
+                    <a href="javascript:void(0);" class="tx">潮流T恤</a>
+                    <a href="javascript:void(0);">时尚女鞋</a>
+                    <a href="javascript:void(0);">短裤</a>
+                    <a href="javascript:void(0);">半身裙</a>
+                    <a href="javascript:void(0);">男士外套</a>
+                    <a href="javascript:void(0);">墙纸</a>
+                    <a href="javascript:void(0);">新款男鞋</a>
+                    <a href="javascript:void(0);">耳机</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-1">
+        <!-- 导航栏 -->
+        <ul class="nav">
+            <li class="left-nav"><a href="javascript:void(0);">主题市场</a></li>
+            <li class="li"><a href="javascript:void(0);">天猫</a></li>
+            <li class="li"><a href="javascript:void(0);">聚划算</a></li>
+            <li class="li" style="color: white"> | </li>
+            <li class="li"><a href="javascript:void(0);">天猫商城</a></li>
+            <li class="li"><a href="javascript:void(0);">司法拍卖</a></li>
+            <li class="li"><a href="javascript:void(0);">淘宝心选</a></li>
+            <li class="li" style="color: white"> | </li>
+            <li class="li"><a href="javascript:void(0);">飞猪旅行</a></li>
+            <li class="li"><a href="javascript:void(0);">智能生活</a></li>
+            <li class="li"><a href="javascript:void(0);">苏宁易购</a></li>
+        </ul>
+        <!-- 内容区域 -->
+        <div class="shop" id="">
+            <!-- 左侧功能条 -->
+            <ul class="left-items" id="left-items">
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">女装</a> /
+                    <a href="javascript:void(0);">内衣</a> /
+                    <a href="javascript:void(0);">家居</a>
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">女鞋</a> /
+                    <a href="javascript:void(0);">男鞋</a> /
+                    <a href="javascript:void(0);">箱包</a>
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">母婴</a> /
+                    <a href="javascript:void(0);">童装</a> /
+                    <a href="javascript:void(0);">玩具</a>
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">男装</a> /
+                    <a href="javascript:void(0);">运动户外</a>
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">美妆</a> /
+                    <a href="javascript:void(0);">彩妆</a> /
+                    <a href="javascript:void(0);">个护</a>
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">手机</a> /
+                    <a href="javascript:void(0);">数码</a> /
+                    <a href="javascript:void(0);">企业</a>
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">大家电</a> /
+                    <a href="javascript:void(0);">生活电器</a>
+
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">零食</a> /
+                    <a href="javascript:void(0);">生鲜</a> /
+                    <a href="javascript:void(0);">茶酒</a>
+
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">厨具</a> /
+                    <a href="javascript:void(0);">收纳</a> /
+                    <a href="javascript:void(0);">清洁</a>
+
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">家纺</a> /
+                    <a href="javascript:void(0);">家饰</a> /
+                    <a href="javascript:void(0);">鲜花</a>
+
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">图书音像</a> /
+                    <a href="javascript:void(0);">文具</a>
+
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">医药保健</a> /
+                    <a href="javascript:void(0);">进口</a>
+
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">汽车</a> /
+                    <a href="javascript:void(0);">二手车</a> /
+                    <a href="javascript:void(0);">用品</a>
+
+                </li>
+                <li class="left-items-li">
+                    <a href="javascript:void(0);">房产</a> /
+                    <a href="javascript:void(0);">装修家具</a> /
+                    <a href="javascript:void(0);">建材</a>
+
+                </li>
+                <li class="left-items-content" id="left-items-content"></li>
+            </ul>
+            <!-- 图片展示区 -->
+            <div class="img-box">
+                <div style="width:520px;height: 280px;background-color: brown; float: left;margin-right: 10px;">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/mi12pro.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/content_02.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/charge.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/mixfold.png" alt=""></div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div id="toBig1">
+                    <img src="img/tu2.jpg " alt="tu2">
+                </div>
+                <div style="width:520px;height: 200px;background-color: rgb(89, 42, 165);float: left;margin-top:10px; margin-right: 10px;">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img style="width:100%;height: 100%" src="img/content_06.png"
+                                                           alt=""></div>
+                            <div class="swiper-slide"><img style="width:100%;height: 100%" src="img/content_07.png"
+                                                           alt=""></div>
+                            <div class="swiper-slide"><img style="width:100%;height: 100%" src="img/content_08.png"
+                                                           alt=""></div>
+                            <div class="swiper-slide"><img style="width:100%;height: 100%" src="img/content_09.png"
+                                                           alt=""></div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div id="toBig2">
+                    <img src="img/tu4.jpg" alt="tu4">
+                </div>
+            </div>
+            <!--信息展示区-->
+            <div class="tu-right">
+                <div class="right-icon">
+                    <img src="img/hi.png" alt="">
+                </div>
+                <div class="right-btn">
+                    <a href="login.html" id="btn1" onmouseover="toBig(this)" onmouseout="toSmall(this)">登录</a>
+                    <a href="login.html" id="btn2" onmouseover="toBig(this)" onmouseout="toSmall(this)">注册</a>
+                    <a href="javascript:void(0);" id="btn3" onmouseover="toBig(this)" onmouseout="toSmall(this)">开店</a>
+                </div>
+                <div class="right-warn">网上有害信息举报专区</div>
+                <div class="right-info">
+                    <ul class="info-top">
+                        <li><a href="javascript:void(0);">公告</a></li>
+                        <li>|</li>
+                        <li><a href="javascript:void(0);">规则</a></li>
+                        <li>|</li>
+                        <li><a href="javascript:void(0);">论坛</a></li>
+                        <li>|</li>
+                        <li><a href="javascript:void(0);">安全</a></li>
+                        <li>|</li>
+                        <li><a href="javascript:void(0);">公益</a></li>
+                    </ul>
+                    <ul class="info-bottom">
+                        <li>公益阿里、腾讯等六家公司同台联合做公益</li>
+                        <li>淘宝造物节之城市秘密、聚划算88红包省钱卡</li>
+                    </ul>
+                </div>
+                <ul class="right-recharge">
+                    <li><a class="icon icon-1" href="javascript:void(0);"></a>
+                        <p>充话费</p></li>
+                    <li><a class="icon icon-2" href="javascript:void(0);"></a>
+                        <p>旅行</p></li>
+                    <li><a class="icon icon-3" href="javascript:void(0);"></a>
+                        <p>车险</p></li>
+                    <li><a class="icon icon-4" href="javascript:void(0);"></a>
+                        <p>游戏</p></li>
+                    <li><a class="icon icon-5" href="javascript:void(0);"></a>
+                        <p>彩票</p></li>
+                    <li><a class="icon icon-6" href="javascript:void(0);"></a>
+                        <p>电影</p></li>
+                    <li><a class="icon icon-7" href="javascript:void(0);"></a>
+                        <p>酒店</p></li>
+                    <li><a class="icon icon-8" href="javascript:void(0);"></a>
+                        <p>理财</p></li>
+                    <li><a class="icon icon-9" href="javascript:void(0);"></a>
+                        <p>找服务</p></li>
+                    <li><a class="icon icon-10" href="javascript:void(0);"></a>
+                        <p>演出</p></li>
+                    <li><a class="icon icon-11" href="javascript:void(0);"></a>
+                        <p>水电煤</p></li>
+                    <li><a class="icon icon-12" href="javascript:void(0);"></a>
+                        <p>火车票</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="good">
+        <div class="good_left div_block">
+            <div class="good_left_top">
+                <img style="float: left" src="img/goodStore.png" alt="">
+                <a style="float:left;" href="javascript:void(0);">与品质生活不期而遇</a>
+                <a style="float:right;" href="javascript:void(0);">换一换</a>
+            </div>
+            <div class="good_left_middle">
+                <div style="margin-right: 3px;">
+                    <a href="javascript:void(0);"><img style="width: 181px;height:181px " src="img/good_01.png" alt="">
+                    </a>
+                    <a href="javascript:void(0);"
+                       style="margin-left: 10px;text-decoration: none;color: #3C3C3C;font-weight: 400">max破产都要买的口红</a><br>
+                    <a href="javascript:void(0);"
+                       style="font-size: 13px;margin-left: 15px;text-decoration: none;color: #999999">《破产姐妹》max最爱</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/笑脸.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none;color: deepskyblue">5089人都说好</a>
+                </div>
+                <div style="margin-right: 3px">
+                    <a href="javascript:void(0);"><img style="width: 181px;height:181px " src="img/good_02.png" alt="">
+                    </a>
+                    <a href="javascript:void(0);"
+                       style="margin-left: 10px;text-decoration: none;color: #3C3C3C;font-weight: 400">GoGan冰种玉镯</a><br>
+                    <a href="javascript:void(0);"
+                       style="font-size: 13px;margin-left: 15px;text-decoration: none;color: #999999">极品冰种质地，视觉效果通</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/笑脸.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none;color: deepskyblue">194人都说好</a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);"><img style="width: 181px;height:181px " src="img/good_03.png" alt="">
+                    </a>
+                    <a href="javascript:void(0);"
+                       style="margin-left: 5px;text-decoration: none;color: #3C3C3C;font-weight: 400">走红的解压神器-切割史</a><br>
+                    <a href="javascript:void(0);"
+                       style="font-size: 13px;margin-left: 15px;text-decoration: none;color: #999999">将刀用火加热到100摄氏度</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/笑脸.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none;color: deepskyblue">393人都说好</a>
+                </div>
+            </div>
+            <div class="good_left_bottom">
+                <div style="margin-right: 3px;">
+                    <a href="javascript:void(0);"><img style="width: 181px;height:181px " src="img/good_04.png" alt="">
+                    </a>
+                    <a href="javascript:void(0);"
+                       style="margin-left: 10px;text-decoration: none;color: #3C3C3C;font-weight: 400">碎脂机，超快瘦身</a><br>
+                    <a href="javascript:void(0);"
+                       style="font-size: 13px;margin-left: 15px;text-decoration: none;color: #999999">这个精美的碎脂机，不仅</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/笑脸.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none;color: deepskyblue">121人都说好</a>
+                </div>
+                <div style="margin-right: 3px">
+                    <a href="javascript:void(0);"><img style="width: 181px;height:181px " src="img/good_05.png" alt="">
+                    </a>
+                    <a href="javascript:void(0);"
+                       style="margin-left: 5px;text-decoration: none;color: #3C3C3C;font-weight: 400">5克拉钻石戒指女豪华皇</a><br>
+                    <a href="javascript:void(0);"
+                       style="font-size: 13px;margin-left: 10px;text-decoration: none;color: #999999">宝贝很漂亮的，超级闪，质量</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/笑脸.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none;color: deepskyblue">63人说好</a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);"><img style="width: 181px;height:181px " src="img/good_06.png" alt="">
+                    </a>
+                    <a href="javascript:void(0);"
+                       style="margin-left: 10px;text-decoration: none;color: #3C3C3C;font-weight: 400">小宝贝的彩虹浴盆</a><br>
+                    <a href="javascript:void(0);"
+                       style="font-size: 13px;margin-left: 15px;text-decoration: none;color: #999999">具有流动性的水晶泥真是</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/笑脸.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none;color: deepskyblue">223人说好</a>
+                </div>
+            </div>
+        </div>
+        <div class="good_right div_block">
+            <div class="good_right_top">
+                <img style="float: left" src="img/loveWalk.png" alt="">
+                <a style="float: left;color: #999999;margin-left: 5px" href="javascript:void(0);">献给聪明可爱的你</a>
+                <a style="float: right; color: #999999" href="javascript:void(0);">更多</a>
+            </div>
+            <div class="good_right_middle">
+                <div style="margin-right: 3px;">
+                    <a href="javascript:void(0);"><img style="width: 181px;height:181px " src="img/good_07.png" alt="">
+                    </a>
+                    <a href="javascript:void(0);" style="margin-left: 10px;text-decoration: none;font-size: 13px">
+                        <img style="width: 15px;height: 15px" src="img/左双引号.png" alt="">野生大金沟海米干货</a><br>
+                    <a href="javascript:void(0);"
+                       style="font-size: 13px;margin-left: 15px;text-decoration: none">500g大虾仁虾米虾干虾皮</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/rabbit.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none">爱逛****01</a>
+                </div>
+                <div style="margin-right: 3px">
+                    <a href="javascript:void(0);"><img style="width: 181px;height:181px " src="img/good_08.png" alt="">
+                    </a>
+                    <a href="javascript:void(0);" style="margin-left: 10px;text-decoration: none;font-size: 13px">
+                        <img style="width: 15px;height: 15px" src="img/左双引号.png" alt="">牛皮靴子最爱的牛偶皮靴子</a><br>
+                    <a href="javascript:void(0);"
+                       style="font-size: 13px;margin-left: 5px;text-decoration: none">采用最好的原料</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/rabbit.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none">放飞自我的兔小姐</a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);"><img style="width: 181px;height:181px " src="img/good_09.png" alt="">
+                    </a>
+                    <a href="javascript:void(0);" style="margin-left: 10px;text-decoration: none;font-size: 13px">
+                        <img style="width: 15px;height: 15px" src="img/左双引号.png" alt="">洪恩点读笔可点读</a><br>
+                    <a href="javascript:void(0);" style="font-size: 13px;margin-left: 15px;text-decoration: none">辅导产品
+                        有儿童口语启蒙</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/rabbit.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none">5089人都说好</a>
+                </div>
+            </div>
+            <div class="good_right_bottom">
+                <div style="margin-right: 3px;">
+                    <a href=""><img style="width: 181px;height:181px " src="img/good_10.png" alt=""> </a>
+                    <a href="javascript:void(0);" style="margin-left: 10px;text-decoration: none;font-size: 13px">
+                        <img style="width: 15px;height: 15px" src="img/左双引号.png" alt="">山瑞多功能充电太阳</a><br>
+                    <a href="javascript:void(0);" style="font-size: 13px;margin-left: 15px;text-decoration: none">能营地等户外敞篷灯露营灯</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/rabbit.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none">爱逛****01</a>
+                </div>
+                <div style="margin-right: 3px">
+                    <a href=""><img style="width: 181px;height:181px " src="img/good_11.png" alt=""> </a>
+                    <a href="javascript:void(0);" style="margin-left: 10px;text-decoration: none;font-size: 13px">
+                        <img style="width: 15px;height: 15px" src="img/左双引号.png" alt="">jc-索尼16-50mm摄像头</a><br>
+                    <a href="javascript:void(0);" style="font-size: 13px;margin-left: 15px;text-decoration: none">微单自动井盖50Mm</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/rabbit.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none">放飞自我的兔小姐</a>
+                </div>
+                <div>
+                    <a href=""><img style="width: 181px;height:181px " src="img/good_12.png" alt=""> </a>
+                    <a href="javascript:void(0);" style="margin-left: 10px;text-decoration: none;font-size: 13px">
+                        <img style="width: 15px;height: 15px" src="img/左双引号.png" alt="">七天照相记忆训练板</a><br>
+                    <a href="javascript:void(0);" style="font-size: 13px;margin-left: 15px;text-decoration: none">全脑开发焦距右脑记忆力提</a><br><br>
+                    <img style="width: 17px;height: 17px;margin-left: 10px" src="img/rabbit.png" alt="">
+                    <a href="javascript:void(0);" style="margin-left: 3px;text-decoration: none">爱逛****01</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-3">
+        <h1 class="title-h1">
+            热卖单品
+        </h1>
+        <div class="content">
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-2">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-2">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-2">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-2">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-2">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-2">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-2">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-1">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-2">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="img/body-3-1.png" alt="">
+                <p class="desc-1">纯棉男女军绿色t恤2020新款宽松韩版初秋长</p>
+                <p class="desc-2">评价：17705 收藏：6875</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="item">
+            <h2 class="title">消费者保证</h2>
+            <div>
+                <span>保障范围</span>
+                <span>退货退款流程</span>
+                <span>服务中心</span>
+                <span>更多特色服务</span>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="title">消费者保证</h2>
+            <div>
+                <span>保障范围</span>
+                <span>退货退款流程</span>
+                <span>服务中心</span>
+                <span>更多特色服务</span>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="title">消费者保证</h2>
+            <div>
+                <span>保障范围</span>
+                <span>退货退款流程</span>
+                <span>服务中心</span>
+                <span>更多特色服务</span>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="title">消费者保证</h2>
+            <div>
+                <span>保障范围</span>
+                <span>退货退款流程</span>
+                <span>服务中心</span>
+                <span>更多特色服务</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/load_left.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/vue.js"></script>
+
+<script src="js/slipDown.js"></script>
+<script src="js/toBig.js"></script>
+<script src="js/toCenter.js"></script>
+<script>
+    let swiper = new Swiper('.swiper', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        rewind: true,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+    new Vue({
+        el: '.search-m-input',
+        data: {
+            name: ''
+        }
+    })
+</script>
+</body>
+</html>

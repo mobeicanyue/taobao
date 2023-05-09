@@ -1,0 +1,135 @@
+body, html {
+    width: 100%;
+    background: #fff;
+    font: 400 12px arial;
+    color: #666
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+a {
+    color: #08c;
+    text-decoration: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222
+}
+
+.fm-field {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 14px
+}
+
+.fm-field.baxia-container-wrapper {
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.fm-field .fm-label-icon .iconfont {
+    font-size: 24px
+}
+
+.fm-field .fm-text {
+    border: 1px solid #ccc;
+    height: 42px;
+    outline: none;
+    font-size: 14px;
+    padding-left: 50px
+}
+
+.fm-field.fm-field-mobile .fm-text {
+    padding-left: 120px
+}
+
+.fm-field .fm-checkcode {
+    width: 50% !important;
+    display: inline-block;
+    padding-left: 10px
+}
+/**/
+.login-label-icon .fm-field .fm-label-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    background-color: #ccc
+}
+
+.fm-button {
+    background-color: #ff9000;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff9000), to(#ff9000));
+    background-image: linear-gradient(90deg, #ff9000, #ff9000);
+    border: 1px solid #ff9000;
+    border-radius: 3px;
+    font-size: 20px;
+    height: 42px;
+    line-height: 42px;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    cursor: pointer
+}
+
+.width-auto .fm-btn, .width-auto .fm-text, .width-vertical .fm-btn, .width-vertical .fm-text {
+    width: 100%
+}
+
+body .baxia-container {
+    margin-bottom: 20px;
+    display: none
+}
+
+.login-blocks {
+    margin: 8px 0;
+    text-align: right;
+    zoom: 1
+}
+
+.login-blocks a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px
+}
+
+.sns-login {
+    margin: 10px 0;
+    float: left
+}
+
+.taobao_pc.login-view-wwsso .corner-icon-view {
+    height: 10px
+}
+
+.corner-icon-view {
+    position: relative;
+    height: 44px;
+    width: 100%;
+    margin: 0 auto
+}
+/**/
+.corner-icon-view .login-tip {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    display: block
+}
+/**/
+.corner-icon-view .poptip {
+    line-height: 16px;
+    position: relative;
+    z-index: 9999;
+    background-color: #fefcee;
+    border: 1px solid #ff9000;
+    padding: 5px 10px
+}
+
