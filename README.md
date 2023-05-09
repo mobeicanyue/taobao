@@ -3,7 +3,7 @@ Imitation of taobao page 模仿淘宝主页
 
 :art:本项目演示地址: https://Yooona-Lim.github.io/taobao/
 
-forked from webbj97/web-demo-bj
+本项目由于代码统计的需要（fork不统计使用语言）将之前那个删了重建
 
 reference:
 - https://github.com/webbj97/web-demo-bj   
